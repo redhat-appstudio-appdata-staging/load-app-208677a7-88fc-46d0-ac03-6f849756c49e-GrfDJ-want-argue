@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-zveb
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-65-tenant/load-app-208677a7-88fc-46d0-ac03-6f849756c49e/devfile-sample-zveb@sha256:f7afcc2a5e835f8a466fd6b0c38bf49243d91bcda7ae5d8f4cd20186dbb23383
         name: my-nodejs
         ports:
         - containerPort: 3001
