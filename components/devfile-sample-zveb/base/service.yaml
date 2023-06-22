@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-zveb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-zveb
+    app.kubernetes.io/part-of: load-app-208677a7-88fc-46d0-ac03-6f849756c49e
+  name: devfile-sample-zveb
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: devfile-sample-zveb
+status:
+  loadBalancer: {}
